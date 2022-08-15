@@ -15,7 +15,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => console.log("MongoDB Connected!"))
-  .catch((err) => console.error(err));
+  .catch((err) => console.log(err));
 
 app.use(routes);
 
