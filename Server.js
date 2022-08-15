@@ -7,6 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+const port = process.env.PORT || 5000;
 const routes = require("./routes/ToDoRoutes");
 
 mongoose
@@ -19,6 +20,6 @@ mongoose
 
 app.use(routes);
 
-app.listen(5000, () => {
-  console.log("App listening on PORT 5000!");
+app.listen(port, () => {
+  console.log("App listening on PORT dunno!");
 });
